@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+  </head>
+  <body>
+    <button id="btn" onclick="btnclk()">Counter 0</button>
+  </body>
+  <script>
+    function btnclk(){
+      text=document.getElementById("btn").innerText.split(" ");
+      document.getElementById("btn").innerText="Counter "+(parseInt(text[1])+1);
+    }
+  </script>
+</html>
